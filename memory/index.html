@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY</title>
+</head>
+<style>
+
+*{
+background-color: black;
+color: white;
+margin: 0;
+padding: 0;
+
+}
+
+body{
+margin: 0;
+font-family: monospace;
+
+}
+
+#title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#pola{
+margin: auto;
+
+width: 800px;
+height: 600px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid_container{
+    grid-template-columns: repeat(5, 100px);
+    grid-auto-rows: repeat(2,100px);
+    gap: 5px;
+    display: grid;
+    float: left;
+   
+}
+.grid{
+    
+    float: left;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid lightgreen;
+    font-size: 110px;
+    transition: all 0.3s linear;
+}
+
+.grid:hover{
+border: 5px solid lightskyblue;
+cursor: pointer;
+}
+.grid.red {
+    background-color: red;
+    
+}
+
+.grid.blue {
+    background-color: blue;
+}
+
+.grid.green {
+    background-color: green;
+}
+
+.grid.yellow {
+    background-color: yellow;
+    
+}
+
+.grid.orange {
+    background-color: orange;
+}
+
+.grid.pink {
+    background-color: pink;
+    
+}
+
+.grid.purple {
+    background-color: purple;
+}
+
+.grid.brown {
+    background-color: brown;
+}
+
+.grid.lime {
+    background-color: lime;
+    
+}
+
+.grid.cyan {
+    background-color: cyan;
+}
+#wynik{
+text-align: center;
+font-size: 30px;
+
+}
+
+.ukryty{
+background-color: black !important;
+
+}
+
+.wylaczona{
+background-color: lightgray !important;
+
+}
+
+
+
+
+
+</style>
+<body>
+    
+    <section id="obszar">
+
+        <section id="title">Super Gra w memory!</section>
+
+        <section id="pola">
+         
+            <section id="grid_container">
+                
+                <section class="grid" id="1">?</section>
+                <section class="grid" id="2">?</section>
+                <section class="grid" id="3">?</section>
+                <section class="grid" id="4">?</section>
+                <section class="grid" id="5">?</section>
+                <section class="grid" id="6">?</section>
+                <section class="grid" id="7">?</section>
+                <section class="grid" id="8">?</section>
+                <section class="grid" id="9">?</section>
+                <section class="grid" id="10">?</section>
+                <section class="grid" id="11">?</section>
+                <section class="grid" id="12">?</section>
+                <section class="grid" id="13">?</section>
+                <section class="grid" id="14">?</section>
+                <section class="grid" id="15">?</section>
+                <section class="grid" id="16">?</section>
+                <section class="grid" id="17">?</section>
+                <section class="grid" id="18">?</section>
+                <section class="grid" id="19">?</section>
+                <section class="grid" id="20">?</section>
+            
+                
+                
+            </section>
+
+
+        </section>
+        <section id="wynik">Wynik: 0/10</section>
+
+
+
+
+    </section>
+
+
+
+
+
+<script src="skrypt.js"></script>
+
+</body>
+</html>
